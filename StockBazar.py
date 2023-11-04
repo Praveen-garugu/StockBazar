@@ -552,9 +552,9 @@ try:
                     Similar to the previous point, "average lowest price" isn't a standard term. It could refer to the average of the lowest prices of a stock over a specific time frame. This would involve calculating the average of the lowest daily prices the stock reached during that period.
                     ''')
                     st.title(f'Details of the {sea}')
-                    tickerCompany = get_symbol(sea)
-                    sym=yf.Ticker(tickerCompany)
-                    information=pd.Series(sym.info)
+                    tickerCompany1 = get_symbol(sea)
+                    sym1=yf.Ticker(tickerCompany1)
+                    information=pd.Series(sym1.info)
                     details=pd.DataFrame(information)
                     x=details.iloc[11,0]
                     st.subheader(x)
