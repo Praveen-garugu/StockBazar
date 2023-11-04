@@ -20,7 +20,6 @@ streamlit_lottie==0.0.5
 streamlit_option_menu==0.3.6
 tensorflow==2.13.0
 textblob==0.17.1
-tradingview_screener==1.0.0
 yahooquery==2.3.2
 yfinance==0.2.27
 streamlit==1.25.0
