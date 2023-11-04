@@ -1,6 +1,6 @@
 import streamlit as st
 import openai
-import streamlit_authenticator as stauth*/
+import streamlit_authenticator as stauth
 from dependancies import fetch_users,signup
 import streamlit as st
 import pandas as pd
