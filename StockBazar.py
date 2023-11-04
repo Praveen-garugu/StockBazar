@@ -828,10 +828,8 @@ try:
                     with quiz:
                         st.title('Quiz App')
                         components.html(html_code,height=525,width=880)
-                        d1,d2,d3=st.columns(3)'''
-
-                       
-                    footer()
+                        d1,d2,d3=st.columns(3)
+                    footer()'''
                 if selected=='🤖Bot':
                   '''
                     if "messages" not in st.session_state:
