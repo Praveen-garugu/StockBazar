@@ -554,17 +554,17 @@ try:
                     st.title(f'Details of the {sea}')
                     tickerCompany1 = get_symbol(sea)
                     sym1=yf.Ticker(tickerCompany1)
-                    information=pd.Series(sym1.info)
-                    details=pd.DataFrame(information)
-                    x=details.iloc[11,0]
-                    st.subheader(x)
+                    #information=pd.Series(sym1.info)
+                    #details=pd.DataFrame(information)
+                    #x=details.iloc[11,0]
+                    #st.subheader(x)
 
-                    info,actions,holders,news=st.tabs(['Information','Actions','Holders','News'])
-                    with info:
-                        df2=details.head(10)
-                        df3=details.tail(30)
-                        df3=pd.concat([df2,df3],axis=0)
-                        st.table(df3.style.set_table_styles(styles))
+                    actions,holders,news=st.tabs(['Actions','Holders','News'])
+                    #with info:
+                        #df2=details.head(10)
+                        #df3=details.tail(30)
+                        #df3=pd.concat([df2,df3],axis=0)
+                        #st.table(df3.style.set_table_styles(styles))
                     with actions:
                         st.title(':red[Actions]')
                         st.write('In the context of the stock market, the term "actions" is not a commonly used term to refer to specific concepts. It is possible that you might be referring to "transactions" or "trades." Let us clarify these terms:')
