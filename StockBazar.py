@@ -527,7 +527,7 @@ try:
                         </body>    
                     </html>
                     """,unsafe_allow_html=True)
-                    sea=st.text_input(value='',placeholder='Enter a company')
+                    sea=st.text_input('',placeholder='Enter a company')
                     st.subheader('Opening Price')
                     st.write('''
                     The opening price, also known as the "opening trade" or "opening quote," is the price at which the first transaction (trade) of a stock occurs when the stock market opens for the trading day. It's the price at which the stock starts trading after the market's opening bell. The opening price is an important reference point for traders and investors as it provides an initial indication of market sentiment for the day.
@@ -552,8 +552,8 @@ try:
                     Similar to the previous point, "average lowest price" isn't a standard term. It could refer to the average of the lowest prices of a stock over a specific time frame. This would involve calculating the average of the lowest daily prices the stock reached during that period.
                     ''')
                     st.title(f'Details of the {sea}')
-                    tickerCompany1 = get_symbol(sea)
-                    sym1=yf.Ticker(tickerCompany1)
+                    tickerCompany = get_symbol(sea)
+                    sym=yf.Ticker(tickerCompany)
                     #information=pd.Series(sym1.info)
                     #details=pd.DataFrame(information)
                     #x=details.iloc[11,0]
