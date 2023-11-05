@@ -1,8 +1,8 @@
 import streamlit as st
 def c():
     # Title and description
-    st.title("Education App")
-    st.write("Welcome to the Education App. Here, you can learn and explore various topics.")
+    st.title("Stock Market Course")
+    
 
     # Sidebar menu
     option = st.sidebar.selectbox("Select an Option", ["Introduction to stock market"
