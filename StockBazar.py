@@ -282,7 +282,8 @@ def footer():
         st.markdown("[Screener](%s)" % scrn)
         url = 'https://feedback-zxhfcsv93dauqdcevk7lvh.streamlit.app/'
         st.markdown("[Feedback](%s)" % url)
-        st.text('T&c')
+        compare = 'https://stockcompare-hj7d58yddnmfbjqgvnoappy.streamlit.app/'
+        st.markdown("[Compare](%s)" % compare)
     with f2:
         st.subheader(':red[Get Help]')
         st.text('FAQ')
