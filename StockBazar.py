@@ -810,7 +810,7 @@ try:
                     st.table(indicator.tail(10).style.set_table_styles(styles))
                     footer()
                 if selected=='🏫Course':
-                  '''
+                  
                     cour,quiz=st.tabs(['Courses','Quiz'])
                     with cour:
                         telugu,hindi,english=st.tabs(['telugu','hindi','english'])
@@ -829,9 +829,9 @@ try:
                         st.title('Quiz App')
                         components.html(html_code,height=525,width=880)
                         d1,d2,d3=st.columns(3)
-                    footer()'''
+                    footer()
                 if selected=='🤖Bot':
-                  '''
+                  
                     if "messages" not in st.session_state:
                         st.session_state.messages = []
                     for message in st.session_state.messages:
@@ -856,7 +856,7 @@ try:
                                 message_placeholder.markdown(full_response + "▌")
                             message_placeholder.markdown(full_response)
                         st.session_state.messages.append({"role": "assistant", "content": full_response})
-                        '''
+                        
             elif not authentication_status:
                 with info:
                     st.error('Incorrect Password or username')
