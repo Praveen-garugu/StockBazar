@@ -25,6 +25,7 @@ from texttoaudio import speech
 from courseshtml import telugu,hindi,english
 from predictapp import stockPredict
 from Indicator import indicate
+from courses import c
 html_code = '''
 <!DOCTYPE html>
 <html lang="en">
@@ -811,25 +812,7 @@ try:
                     st.table(indicator.tail(10).style.set_table_styles(styles))
                     footer()
                 if selected=='🏫Course':
-                  
-                    cour,quiz=st.tabs(['Courses','Quiz'])
-                    with cour:
-                        telugu,hindi,english=st.tabs(['telugu','hindi','english'])
-                        with telugu:
-                            url = "http://127.0.0.1:5500/telugu.html"
-                            st.write(f"[Click here]({url})")
-                        with hindi:
-                            url = "http://127.0.0.1:5500/hindi.html"
-                            st.write(f"[Click here]({url})")
-
-                        with english:
-                            url = "http://127.0.0.1:5500/english.html"
-                            st.write(f"[Click here]({url})")
-
-                    with quiz:
-                        st.title('Quiz App')
-                        components.html(html_code,height=525,width=880)
-                        d1,d2,d3=st.columns(3)
+                    c()
                     footer()
                 if selected=='🤖Bot':
                   
